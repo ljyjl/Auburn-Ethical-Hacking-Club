@@ -1,0 +1,64 @@
+###############################
+##         bandit0           ##
+###############################
+
+# ssh into the host given
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+# use bandit0 to login
+# use ls to see the files in the directory
+ls
+# only one "readme", cat this file and use the output to login to the next level
+cat readme
+
+###############################
+##         bandit1           ##
+###############################
+
+# using ls you can see there is only one file '-'
+# to output this file you have to use special characters
+cat ./-
+
+###############################
+##         bandit2           ##
+###############################
+
+# using ls you can see there is only one file
+# however it has spaces in the name
+# using auto complete you can easily get the correct input
+
+cat spaces\ in\ the\ filename
+
+###############################
+##         bandit3           ##
+###############################
+
+# cd in inhere directory
+cd inhere
+# running ls comes up with nothing
+# run ls with all flag
+ls -a
+# cat .hidden file
+cat .hidden
+###############################
+##         bandit4           ##
+###############################
+
+###############################
+##         bandit5           ##
+###############################
+
+###############################
+##         bandit6           ##
+###############################
+
+###############################
+##         bandit7           ##
+###############################
+
+###############################
+##         bandit8           ##
+###############################
+
+###############################
+##         bandit9           ##
+###############################

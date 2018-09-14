@@ -1,0 +1,63 @@
+###############################
+##           SSH             ##
+###############################
+
+ssh [username]@[address] -p [portnumber]
+
+###############################
+##           Find            ##
+###############################
+
+###############################
+##           File            ##
+###############################
+
+###############################
+##            ls             ##
+###############################
+
+ls = lists file of current directory
+-a = list all
+-l = list using long format
+
+###############################
+##            cat            ##
+###############################
+
+cat = concatenates files and prints to output
+
+
+###############################
+##    Output Manipulation    ##
+###############################
+> file redirects stdout to file
+1> file redirects stdout to file
+2> file redirects stderr to file
+&> file redirects stdout and stderr to file
+
+/dev/null -> black hole
+
+
+
+
+cd: Change directory
+cd ..: Goes up one directory
+ls: List all in current directory
+ls -a: List all and hidden files in directory
+-l:Lists in long format
+-t:Order files by time
+	can be used together
+	-alt    ALL, Long Format, By Time
+pwd: Print working directory
+mkdir name: Make directory with name
+touch name: creates a new file inside a working directory
+cp fileToBeCopies fileBeingCopiedInto: copies file contents into another file
+cp * file: Copies all files into file
+cp a* file: copies all files that start with a
+cp a*.txt file: copies all files that start with a and end with .txt
+mv: Moves files. can also be used to rename files
+rm: Removes file
+rm -r: Removes directory and all of its files
+echo "" : Outputs text
+>> appends
+> replaces
