@@ -1,4 +1,4 @@
-# Auburn-Ethical-Hacking-Club
+# Auburn Ethical Hacking Club
 Auburn's Ethical Hacking Club's Central Repository for all things cyber
 
 
