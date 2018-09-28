@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+Welcome to the Auburn Ethical Hacking Club (EHC) wiki!
 
-You can use the [editor on GitHub](https://github.com/nadroj-isk/Auburn-Ethical-Hacking-Club/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+This wiki provides all documentation for the EHC. If you have a belong to another universities hacking club then this isn't the wiki for you. If you are apart of Auburn's EHC, wish to be, then keep reading!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+Join us on [slack](https://auburnacm.slack.com/), you'll find us in the ethial-hacking-club channel! 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+_Make sure to use your **@auburn** email_
 
-```markdown
-Syntax highlighted code block
+If you have not already take our [survey](https://goo.gl/forms/6ajTRqusiytN0KFA3) so we can get to know you better! 
 
-# Header 1
-## Header 2
-### Header 3
+# What is this club?
+ The Auburn Ethical Hacking Club is a subset of Auburn's Association for Computing Machinery Club (ACM). We are not our own club but a sub group of ACM. Our focus in EHC is on hacking and hacking **ethically**
+## What is Hacking?
+  Hacking in the most basic terms is the process of exploiting vulnerabilities to gain unauthorized access to systems or resources. Of course it is not as simple as that definition makes it out to be!
 
-- Bulleted
-- List
+ Most of the time when you hear about hackers on the news breaking into stuff for nefarious reasons be it politically or economically motivated those are _black hat_ hackers. Not every hacker in the world is out to destroy someone else's personal property. Not many people are actually aware of these.
 
-1. Numbered
-2. List
+## Common Types of Hackers
+ * White Hat
+    * Also known as ethical hackers, White Hat hackers are the good guys of the hacker world. They’ll help you remove a virus or PenTest a company. Most White Hat hackers hold a college degree in IT security or computer science and must be certified to pursue a career in hacking. The most popular certification is the Security+ from CompTIA. This is the domain we focus on!
+ * Black Hat
+    * Also known as crackers, these are the men and women you hear about in the news. They find banks or other companies with weak security and steal money or credit card information. The surprising truth about their methods of attack is that they often use common hacking practices they learned early on. 
+ * Grey Hat
+   *  Nothing is ever just black or white; the same is true in the world of hacking. Grey Hat hackers don’t steal money or information (although, sometimes they deface a website or two), yet they don’t help people for good (but, they could if they wanted to). These hackers comprise most of the hacking world, even though Black Hat hackers garner most (if not all) of the media’s attention. 
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nadroj-isk/Auburn-Ethical-Hacking-Club/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## _WARNING_ 
+ Since we are **ethical** hackers DO NOT hack on a network or a machine that you do not own unless given permission by us!
+ 
+ Do not run wireshark or ping on Auburn's Network. OIT frequently run packet scanners they will see that activity and message you. We have a isolated network setup to safely and securely run our activities 
