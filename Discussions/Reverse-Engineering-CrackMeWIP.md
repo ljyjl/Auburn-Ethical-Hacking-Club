@@ -32,7 +32,7 @@ def foo(a,b):
 def main():
 	foo(2,5)
 	
-main
+main()
 ```
 
 _Assembler_
