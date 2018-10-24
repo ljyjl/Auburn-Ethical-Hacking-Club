@@ -61,3 +61,27 @@ values of `myArray`. This saved us from having to perform a bunch of arithmatic
 with the indexing of the elements of the array.
 
 ## Reverse Engineering with IDA Debugger
+The CrackMe that was used for this meeting can be found [here](https://crackmes.one/crackme/5b8a37a433c5d45fc286ad83).
+The password for unzipping this file is _crackmes.one_. After unzipping the file, you should
+have a file named **rev50_linux64-bit**. Open this file in _IDA Debugger_ and click *OK*. This
+should present us with a nice disassembly graph of the program. If you have access to a Mac/Linux
+command line, you can actually run this program and see what is says. Do note, that there isn't
+always one correct answer with reverse engineering. The one I am covering in this write-up is not
+even the way that Jordan, the EHC President, solves it. Alright, so in _IDA_ we see that the main
+window splits into two sides. If we look at the left side and scroll all the way down to the bottom
+of the graphs we should see the end of the program. If we look at the graphs that are connected to 
+the end of the program we can see that one has comments in _Assembly_ denoted by `;`. This allows us
+to see that the flag is found in this portion of the function. We then follow the line that points from
+this box to the one above it and analyze it. In this portion, we can see the line `cmp al, 40h ; '@'`.
+This line means that there is a comparison of the contents of the register *AL* with _40h_, which is
+hexadecimal for the number 64, and also is the ASCII value for "_@_". This could possibly mean that
+the password for this program needs to have an "_@_" in it. We then take a similar process for the next
+portion of the function. In the next portion, we can find the lines `call _strlen` and `cmp rax, 0Ah`.
+These two lines are pretty simple to understand. There is a call to the function _strlen_, which returns
+the length of a string, in this case to the register *RAX*. Then, there is a `cmp` call to see if *RAX*
+has the value of _0Ah_. In hexadecimal, base 16, the letters _A - F_ symbolizes the numbers 10 - 15 respectively.
+This means that the string must be of length 10. So, we now know that there is a string that must be of length
+10 and have an _@_ in it. If you had the chance to run the program before opening it in _IDA_, you would know
+that the program takes in a string as a parameter, so we can pass in a string of length 10 and has all _@'s_ to
+see what we get. Running the program, and passing in a string that meets these qualifications solves this CrackMe.
+Now, we are all professional _sreenignE esreveR_. 
