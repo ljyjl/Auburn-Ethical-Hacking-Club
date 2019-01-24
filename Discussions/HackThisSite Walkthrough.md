@@ -1,8 +1,8 @@
-#Hack This Site: Basic Challenges Walkthrough
+# Hack This Site: Basic Challenges Walkthrough
 ===============================================
 
 
-##Basic Level 1
+## Basic Level 1
 ---------------
 This level is pretty easy. We are told that this
 level is a "idiot test." Lets show them that we
@@ -21,7 +21,7 @@ of the form `<--X-->`. This comment has our
 password, which we can copy and paste to pass
 this level.
 
-##Basic Level 2
+## Basic Level 2
 ----------------
 In my honest opinion this level is even easier
 than the first level. This one states that the
@@ -32,7 +32,7 @@ do is to press _Submit_ without inputting
 anything into the form. This should complete the
 level and make us into 1337 haxxors.
 
-##Basic Level 3
+## Basic Level 3
 ----------------
 In this level, the password file has been uploaded,
 which means that we must find out how to get access
@@ -45,7 +45,7 @@ like this `www.hackthissite.org/missions/basic/3/password.php`.
 This should open the file, and present to us the
 password for this level.
 
-##Basic Level 4
+## Basic Level 4
 ----------------
 For this challenge we will have to modify the
 source code for the website to redirect the email
@@ -62,11 +62,11 @@ email address to our own, we can click the button and
 receive an email from HTS containing the password
 for this level.
 
-##Basic Level 5
+## Basic Level 5
 ----------------
 This level requires the exact same process as level 4.
 
-##Basic Level 6
+## Basic Level 6
 ----------------
 Level 6 requires a bit of work for us to solve, but is
 not hard to do. We need to find an ASCII chart so that
@@ -77,7 +77,7 @@ the count starting at 0. Thus, we can reverse engineer
 our password, and check it with the encryption tool
 provided to us.
 
-##Basic Level 7
+## Basic Level 7
 ----------------
 On this challenge, we are told about the Linux command
 `cal`, this command displays the calendar for the given
@@ -90,7 +90,7 @@ we should be able to see the calendar for the current month,
 and the obfuscated password file. We open this file the
 exact same way that we did in level 3 to get our password.
 
-##Basic Level 8
+## Basic Level 8
 ----------------
 This level is pretty challenging if you are not familiar
 with some of the more obscure web technologies. If we
@@ -116,7 +116,7 @@ now see the obfuscated password file, and we should be able to
 view its contents using a similar process that we used in earlier
 levels.
 
-##Basic Level 9
+## Basic Level 9
 ----------------
 With this level we can solve it using the level 8 page. So, what
 we can do is go back to level 8, and check the contents of the
@@ -124,7 +124,7 @@ level 9 directory. We can input `<!--#exec cmd="ls ../../9"-->`
 and thus see the file for level 9's password, and get our
 password for the level to move on to level 10.
 
-##Basic Level 10
+## Basic Level 10
 -----------------
 In this level we are told that all we have to do is enter the
 password. We can input any random junk into the form and see
