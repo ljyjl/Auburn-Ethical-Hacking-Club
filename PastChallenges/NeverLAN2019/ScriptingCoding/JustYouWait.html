@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title></title>
+	<meta http-equiv="refresh" content="60"/>
+  </head>
+  <body>
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <defs>
+  <pattern height="1.5%" width="5%" viewBox="0,0,15,2" id="bricks">
+   <polygon id="brick" points="0,0 0,9 14,9 14,0" fill="#AA1010"/>
+  </pattern>
+  <pattern height="3%" width=".3%" viewBox="0,0,6,7" id="grassT">
+   <line id="lgrass" stroke="rgb(0,210,0)" y2="0" x2="3" y1="5" x1="0"/>
+   <line id="rgrass" stroke="rgb(0,200,0)" y2="7" x2="6" y1="0" x1="3"/>
+  </pattern>
+  <pattern id="starsT" viewBox="0,0,70,80" width="9%" height="8%" patternTransform="rotate(20) scale(1 1.5)">
+	    <polygon points="0,0 4,5 0,10 5,6 10,10 6,5 10,0 5,4" fill="#AAAA00">
+			<animate id="animation1"
+		             attributeName="opacity"
+		             from="0.5" to="1" dur="3s"
+		             begin="0s;animation2.end" />
+		    <animate id="animation2"
+		             attributeName="opacity"
+		             from="1" to="0.5" dur="2s" 
+		             begin="animation1.end" />
+		</polygon>
+	    <polygon transform="rotate(45, 0, 0)" points="10,10 14,15 10,20 15,16 20,20 16,15 20,10 15,14" fill="#FFFFFF" fill-opacity="1">
+			<animate id="animation3"
+		             attributeName="opacity"
+		             from="0.5" to="1" dur="2s"
+		             begin="0s;animation4.end" />
+		    <animate id="animation4"
+		             attributeName="opacity"
+		             from="1" to="0.5" dur="1.3s" 
+		             begin="animation3.end" />
+		</polygon>
+  </pattern>
+	<style type="text/css">@import url('http://fonts.googleapis.com/css?family=Reenie+Beanie');
+ </defs>
+<filter xmlns="http://www.w3.org/2000/svg" id="T4">
+<feFlood x="0%" y="0%" width="100%" height="100%" flood-color="#ca6" result="one"/>
+	
+	<feTurbulence baseFrequency=".007,.25" numOctaves="1" seed="403"/>
+<feColorMatrix type="matrix" result="turb1" values="   1   0   0  0  0      0   -1   0  0  0    0   0  -1  0  0      1   -1   1  0  0 "/>
+<feMerge>
+	<feMergeNode in="one"/>
+	<feMergeNode in="turb1"/>
+</feMerge>
+</filter>
+ <g>
+  <title>Sky</title>
+  <rect id="sky" height="1080" width="1920" y="0" x="0" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="#00FFFF"/>
+  <rect id="stars" height="1080" width="1920" y="0" x="0" fill="url(#starsT)" fill-opacity="0.1"/>
+ </g>
+ <!-- rotate(0 90 480) would be noon-->
+ <g transform="translate(910 200) rotate(7.5 90 480 )">
+	<g width="400" height="400">
+		<title>Sun</title>
+		<g>
+		<style>
+		.line-5c57903fa44b5{
+			fill: #FFFF00;
+			stroke: #FFFF00;
+			stroke-width:2;
+		}
+		.sun-5c57903fa44b5{
+			fill: #FFFF00;
+			stroke: #FFFF00;
+		}
+		</style>
+		<circle class="sun sun-5c57903fa44b5" r="100" cx="50" cy="50"/>
+		
+  <line y2="-129.90381056767" x2="25" y1="229.90381056767" x1="75" class="line-5c57903fa44b5"/>
+  <line y2="-75" x2="-29.903810567666" y1="175" x1="129.90381056767" class="line-5c57903fa44b5"/>
+  <line y2="-7.105427357601E-15" x2="-50" y1="100" x1="150" class="line-5c57903fa44b5"/>
+  <line y2="75" x2="-29.903810567666" y1="25" x1="129.90381056767" class="line-5c57903fa44b5"/>
+  <line y2="129.90381056767" x2="25" y1="-29.903810567666" x1="75" class="line-5c57903fa44b5"/>
+  <line y2="150" x2="100" y1="-50" x1="2.1316282072803E-14" class="line-5c57903fa44b5"/>
+  <line y2="129.90381056767" x2="175" y1="-29.903810567666" x1="-75" class="line-5c57903fa44b5"/>
+  <line y2="75" x2="229.90381056767" y1="25" x1="-129.90381056767" class="line-5c57903fa44b5"/>
+  <line y2="2.8421709430404E-14" x2="250" y1="100" x1="-150" class="line-5c57903fa44b5"/>
+  <line y2="-75" x2="229.90381056767" y1="175" x1="-129.90381056767" class="line-5c57903fa44b5"/>
+  <line y2="-129.90381056767" x2="175" y1="229.90381056767" x1="-75" class="line-5c57903fa44b5"/>
+  <line y2="-150" x2="100" y1="250" x1="-3.5527136788005E-14" class="line-5c57903fa44b5"/>
+		</g>
+			</g>
+	<g width="400" height="400">
+		<title>Moon</title>
+		<circle cx="50" cy="1030" r="100" fill="#DDDDDD"/>
+		<circle cx="50" cy="1080" r="90" fill="#00FFFF"/>
+	</g>
+ </g>
+ <g>
+  <title>Clouds</title>
+  <ellipse ry="26" rx="27" id="svg_48" cy="185" cx="1170" fill="#EEEEEE" fill-opacity="0.9"/>
+  <ellipse ry="27" rx="34" id="svg_52" cy="173" cx="1210" fill="#EEEEEE" fill-opacity="0.9" />
+  <ellipse ry="22" rx="56.5" id="svg_56" cy="186" cx="1213.5" fill="#EEEEEE" fill-opacity="0.9"/>
+ </g>
+ <g>
+  <title>Grass</title>
+  <rect id="grass" height="270" width="1920" y="850" x="0" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke="#000000" fill="#00FF00"/>
+  <rect id="grass" height="270" width="1920" y="850" x="0" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke="#000000" fill="url(#grassT)"/>
+ </g>
+ <g>
+  <title>House</title>
+  <rect id="wall" height="450" width="550" y="400" x="1000" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke="#000000" fill="#ffffaa"/>
+  <polygon stroke="#000000" id="roof" points="1550,400,1000,400,1275,250 " fill="#FF1100"/>
+  <polygon transform="translate(0.400452, 0.133484)" stroke="#000000" id="chimney" points="1445,243 1445,343 1345,288 1345,243 " fill="url(#bricks)"/>
+ </g>
+ <g>
+  <title>door</title>
+  <rect id="door" height="150" width="80" y="700" x="1235" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" stroke="#000000" fill="#7f3f00"/>
+  <ellipse ry="5" rx="5" id="doorknob" cy="775" cx="1305" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" stroke="#000000" fill="#000000"/>
+ </g>
+ <g>
+  <title>Office</title>
+  <rect id="officeWallPaper" height="120" width="120" y="480" x="1066" stroke-width="0" stroke="#000000" fill="#FFAAAA"/>
+  <rect id="Desk" height="13" width="41" y="585" x="1068" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#7f7f00"/>
+  <rect id="LampPole" height="17" width="1.5" y="568" x="1070" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#7f7f7f"/>
+  <rect id="Lamp" height="6" width="15" y="564" x="1070" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#007fff"/>
+  <polygon id="LampLight" points="1082 570, 1087 584, 1072.5 584, 1074 570" fill="#FFFF00" opacity="0.3"/>
+  
+  <rect id="Chair" height="20" width="3" y="580" x="1115" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#a86326"/>
+ </g>
+ <g>
+  <title>Bedroom</title>
+  <rect id="bedroomWallPaper" height="120" width="120" y="480" x="1360" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#FF7F00"/>
+  <rect id="bed" height="13" width="18" y="586" x="1384" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#ffffff"/>
+  <rect id="bed" height="15" width="68" y="584.11758" x="1400" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#0000ff"/>
+  <rect id="bed" height="17" width="5" y="580" x="1467" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#7f0000"/>
+  <rect id="bed" height="25" width="7" y="575" x="1379" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#7f0000"/>
+  <ellipse fill="#ffffff" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="1390" cy="584" id="pillow" rx="3.5" ry="1.75"/>
+  <rect fill="#ffff00" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="1408" y="483" width="25" height="6" id="light"/></g>
+ <g>
+ <g>
+  <title>Clock2</title>
+	<g>
+		<style>
+		.num-5c57903fa44e5{
+			fill: #000000;
+			font-size: 2px;
+			text-anchor: "middle";
+			font-family: "robot";
+		}
+		.hour-5c57903fa44e5{
+			stroke: #000000;
+			stroke-width: 0.55;
+		}
+		.minute-5c57903fa44e5{
+			stroke: #000000;
+			stroke-width: 0.5;
+		}
+		.circle-5c57903fa44e5{
+			fill: #FFFFFF;
+			stroke: #000000;
+			stroke-width: 0.5;
+		}
+		</style>
+		<circle class="circle circle-5c57903fa44e5" cx="1098" cy="546" r="10"/><text class="num num-5c57903fa44e5" text-anchor="middle" style="dominant-baseline: central;" y="538.63878406783" x="1102.25"  >1</text><text class="num num-5c57903fa44e5" text-anchor="middle" style="dominant-baseline: central;" y="541.75" x="1105.3612159322"  >2</text><text class="num num-5c57903fa44e5" text-anchor="middle" style="dominant-baseline: central;" y="546" x="1106.5"  >3</text><text class="num num-5c57903fa44e5" text-anchor="middle" style="dominant-baseline: central;" y="550.25" x="1105.3612159322"  >4</text><text class="num num-5c57903fa44e5" text-anchor="middle" style="dominant-baseline: central;" y="553.36121593217" x="1102.25"  >5</text><text class="num num-5c57903fa44e5" text-anchor="middle" style="dominant-baseline: central;" y="554.5" x="1098"  >6</text><text class="num num-5c57903fa44e5" text-anchor="middle" style="dominant-baseline: central;" y="553.36121593217" x="1093.75"  >7</text><text class="num num-5c57903fa44e5" text-anchor="middle" style="dominant-baseline: central;" y="550.25" x="1090.6387840678"  >8</text><text class="num num-5c57903fa44e5" text-anchor="middle" style="dominant-baseline: central;" y="546" x="1089.5"  >9</text><text class="num num-5c57903fa44e5" text-anchor="middle" style="dominant-baseline: central;" y="541.75" x="1090.6387840678"  >10</text><text class="num num-5c57903fa44e5" text-anchor="middle" style="dominant-baseline: central;" y="538.63878406783" x="1093.75"  >11</text><text class="num num-5c57903fa44e5" text-anchor="middle" style="dominant-baseline: central;" y="537.5" x="1098"  >12</text>
+			<line class="minute minute-5c57903fa44e5" x1="1098" y1="546" x2="1101.3333333333" y2="551.7735026919"/>
+			<line class="hour hour-5c57903fa44e5" x1="1098" y1="546" x2="1094.185132197" y2="547.20282319802"/>
+		</g>
+		 </g>
+ <g>
+  <title>OfficeWindow</title>
+  <rect id="frame1" height="120" width="120" y="480" x="1066" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="6" stroke="#7f3f00" fill="none"/>
+  <line id="vbar1" y2="600" x2="1126" y1="480" x1="1126" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="6" stroke="#7f3f00" fill="none"/>
+  <line id="hbar1" y2="540" x2="1186" y1="540" x1="1066" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="6" stroke="#7f3f00" fill="none"/>
+ </g>
+ <g>
+  <title>BedroomWindow</title>
+  <rect id="svg_1" height="120" width="120" y="480" x="1360" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="6" stroke="#7f3f00" fill="none"/>
+  <line id="svg_2" y2="600" x2="1420" y1="480" x1="1420" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="6" stroke="#7f3f00" fill="none"/>
+  <line id="svg_3" y2="540" x2="1480" y1="540" x1="1360" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="6" stroke="#7f3f00" fill="none"/>
+ </g>
+ <g>
+  <title>Sign</title>
+  <rect id="svg_43" height="115" width="12" y="725" x="585" stroke-width="2" filter="url(#T4)"/>
+  <rect id="svg_44" height="53" width="100" y="730" x="542" stroke-width="2" filter="url(#T4)"/>
+  <switch>
+    <foreignObject x="535" y="720" width="120" height="53">
+      <p xmlns="http://www.w3.org/1999/xhtml" style="font-size:18;font-family:'Reenie Beanie';color:black;">To whomever it may concern:<br/>01100001 01001000 01010010 00110000 01100011 01001000 01001101 00110110 01001100 01111001 00111001 00110101 01100010 00110011 01010110 00110000 01100100 01010011 00110101 01101001 01011010 01010011 00111001 01101011 01010101 01011000 01100011 00110000 01100100 01111010 01101100 01011000 01011010 00110001 01101000 01101010 01010101 01010001 00111101 00111101</p>
+    </foreignObject>
+	<!-- some browsers wont handle foreignObject-->
+    <text xml:space="preserve" text-anchor="middle" font-family="Reenie Beanie" font-size="18" id="svg_46" y="772" x="591" fill="#000000">To whomever it may concern: 01100001 01001000 01010010 00110000 01100011 01001000 01001101 00110110 01001100 01111001 00111001 00110101 01100010 00110011 01010110 00110000 01100100 01010011 00110101 01101001 01011010 01010011 00111001 01101011 01010101 01011000 01100011 00110000 01100100 01111010 01101100 01011000 01011010 00110001 01101000 01101010 01010101 01010001 00111101 00111101</text>
+  </switch>
+ </g>
+</svg>
+  </body>
+</html>

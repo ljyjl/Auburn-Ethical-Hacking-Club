@@ -1,0 +1,23 @@
+These are the Recon Hints from NeverLAN CTF 2019
+
+Unexpected Intruder:
+occurring in Chicago, Illinois, United States, on the evening of November 22. There was an interruption like nothing we had ever seen before.
+What was the name of the Intruder?
+
+Purvesta:
+I love Github. Use it all the time! Just wish they could host a webpage...
+
+Let's go way back:
+Back in the day, Zesty hid a flag in the first version of our website.
+
+Filling a Need:
+This organizations creation was announced Mon Sep 24 2001
+What is the full name of the organization?
+
+It's to Keyz:
+It looks like N30 has been keeping passwords secret with some software he wrote, but he should know better than to rely on proprietary software for security.
+It looks like he left the repo public too!
+
+Teach Them to Hack:
+In 2018 NeverlanCTF was one of the Keynotes for a security conference. There is a video of it on youtube. 
+I remember seeing a flag. This one is not as easy as you think.
