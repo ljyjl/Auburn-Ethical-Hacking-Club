@@ -3,7 +3,7 @@ Welcome to the Auburn Ethical Hacking Club (EHC) wiki!
 This wiki provides all documentation for the EHC. If you have a belong to another universities hacking club then this isn't the wiki for you. If you are apart of Auburn's EHC, wish to be, then keep reading!
 
 
-Join us on [slack](https://auburnacm.slack.com/), you'll find us in the ethial-hacking-club channel! 
+Join us on [discord](https://discord.gg/2f9rtas), you'll find us in the ethial-hacking-club channel! 
 
 _Make sure to use your **@auburn** email_
 
